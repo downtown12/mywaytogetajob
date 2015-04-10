@@ -6,7 +6,7 @@ My Way to Get a Job
 		It includes: solutions for problems on leetcode, problems asked during interviews and problems in somebooks like BEAUTY_OF_PROGRAMMING (编程之美).
 
 About languages used in documents and code comments:
---------------------
+-----------------------------------------------------------
 		English for most of all, Chinese for the rest.
 		My English is poor. But I try to write English in this project as much as possible.
 		I hope that do such many writings in English can help in improving my English skills.
