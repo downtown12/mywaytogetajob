@@ -3,7 +3,7 @@ My Way to Get a Job
 
 README写得简直絮叨 <br>
 
-This project records the HARD process to get the first job of my life.<br>
+This project records the HARD process to get my first job.<br>
 It includes: solutions for problems on leetcode, problems asked during interviews and problems in somebooks like BEAUTY_OF_PROGRAMMING (编程之美).<br>
 
 
