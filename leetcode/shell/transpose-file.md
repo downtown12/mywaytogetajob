@@ -15,7 +15,7 @@
 		###
 
 #My Idea:
-#### awk中双重for循环的使用
+##### awk中双重for循环的使用
 #### 注意：NF和NR的含义不一样
 #### NF： Number of Fields，一行中列的个数
 #### NR： Number of Record, 已经读取的记录的个数，也就是已经处理到了第几行（从1计数）
