@@ -15,13 +15,13 @@
 		###
 
 #My Idea:
-##### awk中双重for循环的使用
-#### 注意：NF和NR的含义不一样
-#### NF： Number of Fields，一行中列的个数
-#### NR： Number of Record, 已经读取的记录的个数，也就是已经处理到了第几行（从1计数）
-#### 只有当所有行都执行完后NR才是当前文件的行数。当然这是对于只有一个输入文件而言的，如果有多个输入文件，NR的值会累加
-###
-#### Read from the file file.txt and print its transposed content to stdout.
+		#### awk中双重for循环的使用
+		#### 注意：NF和NR的含义不一样
+		#### NF： Number of Fields，一行中列的个数
+		#### NR： Number of Record, 已经读取的记录的个数，也就是已经处理到了第几行（从1计数）
+		#### 只有当所有行都执行完后NR才是当前文件的行数。当然这是对于只有一个输入文件而言的，如果有多个输入文件，NR的值会累加
+		###
+		#### Read from the file file.txt and print its transposed content to stdout.
 
 #My Solution:
 		awk '{for(j=1;j<=NF;j++) row[NR][j] = $j;} 
