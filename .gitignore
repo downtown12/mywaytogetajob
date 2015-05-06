@@ -2,3 +2,5 @@
 *.[oa]
 *~
 
+transpose-file.awk
+file.txt
