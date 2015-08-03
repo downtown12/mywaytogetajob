@@ -1,5 +1,28 @@
 /*
-another solution
+smart_one:
+
+	this solution use a number y to record the low digits reversely of the imput number x. Meanwhile cut x's one low digit.while x>y, repeat this operation.
+The procedures is like:
+x: 12321	x: 1232		x: 123		x:12
+y: 0 		y: 1		y: 12		y:123
+
+when y>=x, stop the operation above and check:
+if y == x: then x is palindrome as well as an even number.such as orginally x is 123321.(after these operations x=123, y=123).
+
+if y>x: then cut the lowest digit of y and check:
+		if now y ==x, then y is palindrome as well as an odd number.
+		else x is not palindrome.
+
+NOTE one special condition: 
+	if the original x contain zeros at the end. These zeros will affect the operations above and mistake the result(because zeros affect the value of y). like 10 and 12321000 are not palindrome numbers. 
+	Just return false if x end with zeros. It must not be a palindrom number. 
+
+
+another solution:
+	Traverse each digit of x to get the digit's length of x. (the digit length of x=12321 is 5).
+	reverse a half digit's length of the lowest digits of x,assign it to a new number y.
+	get a half digit's length of the highest digits of x, assign it to x1.
+
 */
 
 bool smart_one(int x){

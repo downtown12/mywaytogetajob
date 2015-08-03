@@ -9,8 +9,8 @@ The key to copying a linked list with random pointer is how to quickly assign ea
 because if the new cloning linked list is only a linked list, we can't find which node its random pointer points to quikly (in O(1) time complexity).
 
 But if I have these two factors below, I can find where its random pointer points quickly:
-1、Make a hashmap which map to the original list's node to its position(start from 0) in this list.
-2、Make the new cloning list not just a linked list, but also an array.
+1. Make a hashmap which map to the original list's node to its position(start from 0) in this list.
+2. Make the new cloning list not just a linked list, but also an array.
 
 The original linked list and the cloning one share the same element's index,
 so I can map the node random pointer points to its index from the hashmap created in the factor 1.
@@ -36,6 +36,13 @@ cloning array:
     0       1       2
 [node1', node2', node3']
 '''
+
+# Definition for singly-linked list with a random pointer.
+class RandomListNode:
+    def __init__(self, x):
+        self.label = x
+        self.next = None
+        self.random = None
 
 class Solution:
     # @param head, a RandomListNode
@@ -82,3 +89,15 @@ class Solution:
 
         return l_cloners[0]
 
+if __name__ == '__main__':
+	llist = [RandomListNode(i) for i in range(1,5)];
+	for node,nnode in zip(llist[:-1], llist[1:]):	
+		node.next = nnode
+	
+	llist[0].random = llist[2]
+	llist[1].random = llist[2]
+	llist[2].random = None
+	llist[3].random = llist[0]
+
+	s = Solution()
+	s.copyRandomList(llist[0])

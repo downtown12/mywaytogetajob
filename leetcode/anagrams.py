@@ -1,4 +1,4 @@
-i#anagrams: 异序词. 字母成分完全相同但子母排列顺序不同的字符串。例: lives 是 Elvis 的一个异序词.
+#anagrams: 异序词. 字母成分完全相同但子母排列顺序不同的字符串。例: lives 是 Elvis 的一个异序词.
 #The idea:
 #1. create a Hash function strtoint for each node. This function can map a string to an integer number. 通过26进制
 #    This is because compare integer numbers is faster than strings. (a decoded string can be seen as zero or more integers).
@@ -44,4 +44,3 @@ class Solution:
               res += [strs[i] for i in index_list]
         
         return res
-            

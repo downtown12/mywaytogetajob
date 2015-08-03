@@ -3,7 +3,7 @@ My Way to Get a Job
 
 README写得简直絮叨 <br>
 
-This project records the HARD process to get the first job of my life.<br>
+This project records the HARD process to get my first job.<br>
 It includes: solutions for problems on leetcode, problems asked during interviews and problems in somebooks like BEAUTY_OF_PROGRAMMING (编程之美).<br>
 
 
@@ -11,8 +11,8 @@ About human languages:
 -----------------------------------------------------------
 
 English for most of all, Chinese for the rest.<br>
-My English is poor. But I try to write English in this project as much as possible.<br>
-I hope that do such many writings in English can help in improving my English skills.<br>
+I try to write this project's documents in English as much as possible.<br>
+I hope that doing such many writings in English can help in improving my English skills.<br>
 So if you find my mistakes in these documentary, I would welcome every corrections.<br>
 Once I find English cant deliver my thought of a problem or something else, 我将改用汉字来说。<br>
 
