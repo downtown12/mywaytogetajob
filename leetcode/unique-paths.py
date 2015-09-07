@@ -15,7 +15,6 @@ class Solution(object):
         """
         # initialize the state matrix
         f = [[1] * n for i in range(m)]
-        print f
 ### no need to do this, for the every element in the matrix f are initialized with 1.
 #        # set every position that can be reached to the ENDPOINT horizontally and straightly to 1.
 #        for i in range(n):
@@ -24,12 +23,11 @@ class Solution(object):
 #        for i in range(m-1):
 #                f[(n-1)*(m-i)] = 1
 
-        for i in range(m-1,-1,-1):
-                for j in range(n-1,-1,-1):
+        for i in range(m-2,-1,-1):
+                for j in range(n-2,-1,-1):
                     #f[x, y] = f[x+1, y] + f[x, y+1] 
                     #that is: f[cur_pos] = f[down_pos] + f[right_pos]
-                    f[i][j] = f[i+1][j] + f[i][j+1]
-        print f
+                     f[i][j] = f[i+1][j] + f[i][j+1]
         return f[0][0]
 
 
